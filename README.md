@@ -1,6 +1,6 @@
 ## Marvel Comics
 
-#### Aplicativo que contem todos os HQ's da marvel consumindo a api publica da própria Marvel.
+#### Aplicativo que contem todos os HQ's da marvel (Somente ver os HQ's disponivels, mas nao é possivel ler HQ's) consumindo a api publica da própria Marvel.
 
 ##### Aplicativo desenvolvido apenas com intuito de trabalho para faculdade, sem fundos lucrativos.
 
