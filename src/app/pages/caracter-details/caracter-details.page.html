@@ -1,0 +1,50 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button icon="arrow-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalhes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <div class="ion-text-center">
+      <img *ngIf="comic?.thumbnail?.path; else loading" [src]="comic?.thumbnail?.path">
+    </div>
+
+    <ng-template #loading>
+      <div class="ion-text-center ion-padding">
+        <ion-spinner></ion-spinner>
+      </div>
+    </ng-template>
+
+    <ion-card-title>
+      <ion-card-title class="ion-padding" style="font-weight: bold; text-align: center;">{{ comic?.title }}
+      </ion-card-title>
+    </ion-card-title>
+
+    <div>
+      <ion-label class="ion-padding ion-margin">{{ comic?.description }}</ion-label>
+    </div>
+
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" *ngIf="purchase" (click)="buy()">Comprar</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" *ngIf="detail" (click)="details()">Mais detalhes</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" *ngIf="reader" (click)="read()">Leia</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+</ion-content>

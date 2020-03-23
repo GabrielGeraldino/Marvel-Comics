@@ -1,0 +1,17 @@
+.img {
+  width: 25px;
+  height: 25px;
+}
+
+.unselected {
+  color: #92949c;
+}
+
+.selected {
+  color: #50c8ff;
+}
+
+ion-button {
+  --background: linear-gradient(90deg, #4fffdf 0%, #ffe561 100%);
+  --color: black;
+}
