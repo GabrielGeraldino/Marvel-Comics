@@ -11,6 +11,4 @@ Link para acessar web: https://marvelapp-5fe45.firebaseapp.com/caracters
 ### Participantes:
 ```
     Gabriel Geraldino
-    Leonardo Oka
-    Caio Henrique
 ```
